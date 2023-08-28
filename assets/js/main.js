@@ -60,6 +60,30 @@ const whiteMailList = ['mario@gmail.com', 'luca@gmail.com', 'marco@gmail.com', '
 document.getElementById('send').addEventListener('click', function (e) {
     e.preventDefault();
     let userEmail = document.getElementById('user-email').value;
+    
+
+    for (let i = 0; i < whiteMailList.length; i++) {
+        //const mailAdcepted = whiteMailList[i];
+        
+        
+        if (userEmail == mailAdcepted[i]) {
+            
+            result.innerHTML = 'Sei Ammesso'            
+            
+        } else {
+            result.innerHTML = 'Non sei Ammesso'
+            
+        }
+        
+    }
+ 
+    
+})
+
+
+/* document.getElementById('send').addEventListener('click', function (e) {
+    e.preventDefault();
+    let userEmail = document.getElementById('user-email').value;
     // console.log(userEmail);
 
     for (let i = 0; i < whiteMailList.length; i++) {
@@ -78,5 +102,6 @@ document.getElementById('send').addEventListener('click', function (e) {
     }
  
     
-})
+}) */
+
 
