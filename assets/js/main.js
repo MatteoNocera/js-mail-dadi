@@ -54,16 +54,32 @@ if (userNumber > computerNumber) {
 }
 
 const whiteMailList = ['mario@gmail.com', 'luca@gmail.com', 'marco@gmail.com', 'lisa@gmail.com', 'andrea@gmail.com', 'emma@gmail.com', 'giorgia@gmail.com', 'carlo@gmail.com']
-const userMail = document.getElementById('email');
+console.log(whiteMailList);
 
-for (let i = 0; i < whiteMailList.length; i++) {
+
+
+let userMail = document.getElementById('email');
+
+
+
+document.getElementById('send').addEventListener('click', sendDates);
+
+function sendDates() {
+    console.log(userMail);
+}
+
+
+
+
+
+/* for (let i = 0; i < whiteMailList.length; i++) {
     const mailAdcepted = whiteMailList[i];
     
 
     if (userMail == mailAdcepted) {
         console.log(mail);
 
-        /* const numbersList = [1, 2, 3, 4, 5, 6];
+        const numbersList = [1, 2, 3, 4, 5, 6];
         console.log(numbersList);
 
         const userNumber = Math.floor(Math.random() * 6 + 1);
@@ -79,12 +95,12 @@ for (let i = 0; i < whiteMailList.length; i++) {
             console.log('😢 Hai perso!');
         } else {
             console.log('😁 Parità, ritenta!');
-        } */
+        } 
     } else {
         //console.log('mail non accettata');
         
     }
 
     
-}
+} */
 
