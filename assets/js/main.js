@@ -54,53 +54,30 @@ if (userNumber > computerNumber) {
 }
 
 const whiteMailList = ['mario@gmail.com', 'luca@gmail.com', 'marco@gmail.com', 'lisa@gmail.com', 'andrea@gmail.com', 'emma@gmail.com', 'giorgia@gmail.com', 'carlo@gmail.com']
-console.log(whiteMailList);
+
+// console.log(whiteMailList);
 
 
+document.getElementById('send').addEventListener('click', function (e) {
+    e.preventDefault();
+    let userEmail = document.getElementById('user-email').value;
+    // console.log(userEmail);
 
-let userMail = document.getElementById('email');
-
-
-
-document.getElementById('send').addEventListener('click', sendDates);
-
-function sendDates() {
-    console.log(userMail);
-}
-
-
-
-
-
-/* for (let i = 0; i < whiteMailList.length; i++) {
-    const mailAdcepted = whiteMailList[i];
-    
-
-    if (userMail == mailAdcepted) {
-        console.log(mail);
-
-        const numbersList = [1, 2, 3, 4, 5, 6];
-        console.log(numbersList);
-
-        const userNumber = Math.floor(Math.random() * 6 + 1);
-        console.log(userNumber);
-
-        const computerNumber = Math.floor(Math.random() * 6 + 1);
-        console.log(computerNumber);
-
-        // Stabilisco il vincitore
-        if (userNumber > computerNumber) {
-            console.log('😎 Hai vinto!!!');
-        } else if (userNumber < computerNumber) {
-            console.log('😢 Hai perso!');
+    for (let i = 0; i < whiteMailList.length; i++) {
+        //const mailAdcepted = whiteMailList[i];
+        
+        
+        if (whiteMailList.includes(userEmail)) {
+            
+            result.innerHTML = 'Sei Ammesso'            
+            
         } else {
-            console.log('😁 Parità, ritenta!');
-        } 
-    } else {
-        //console.log('mail non accettata');
+            result.innerHTML = 'Non sei Ammesso'
+            
+        }
         
     }
-
+ 
     
-} */
+})
 
