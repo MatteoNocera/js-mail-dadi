@@ -35,9 +35,6 @@ Tools
 
 // Genero un numero random da 1 a 6 per il giocatore e per il computer
 
-const numbersList = [1, 2, 3, 4, 5, 6];
-console.log(numbersList);
-
 const userNumber = Math.floor(Math.random() * 6 + 1);
 console.log(userNumber);
 
@@ -52,6 +49,8 @@ if (userNumber > computerNumber) {
 } else {
     console.log('😁 Parità, ritenta!');
 }
+
+// Mail
 
 const whiteMailList = ['mario@gmail.com', 'luca@gmail.com', 'marco@gmail.com', 'lisa@gmail.com', 'andrea@gmail.com', 'emma@gmail.com', 'giorgia@gmail.com', 'carlo@gmail.com']
 
