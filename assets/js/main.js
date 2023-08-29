@@ -69,7 +69,24 @@ document.getElementById('send').addEventListener('click', function (e) {
         
         if (userEmail == mailAdcepted) {
             
-            result.innerHTML = 'Sei Ammesso'            
+            result.innerHTML = 'Sei Ammesso' 
+
+            // gioco se sei ammesso
+            
+            /* const userNumber = Math.floor(Math.random() * 6 + 1);
+            console.log(userNumber);
+
+            const computerNumber = Math.floor(Math.random() * 6 + 1);
+            console.log(computerNumber);
+
+            // Stabilisco il vincitore
+            if (userNumber > computerNumber) {
+                console.log('😎 Hai vinto!!!');
+            } else if (userNumber < computerNumber) {
+                console.log('😢 Hai perso!');
+            } else {
+                console.log('😁 Parità, ritenta!');
+            } */           
             
         }
     }
