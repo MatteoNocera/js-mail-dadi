@@ -63,10 +63,10 @@ document.getElementById('send').addEventListener('click', function (e) {
     
 
     for (let i = 0; i < whiteMailList.length; i++) {
-        //const mailAdcepted = whiteMailList[i];
+        const mailAdcepted = whiteMailList[i];
         
         
-        if (userEmail == mailAdcepted[i]) {
+        if (userEmail == mailAdcepted) {
             
             result.innerHTML = 'Sei Ammesso'            
             
