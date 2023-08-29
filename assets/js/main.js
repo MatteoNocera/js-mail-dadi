@@ -56,6 +56,7 @@ const whiteMailList = ['mario@gmail.com', 'luca@gmail.com', 'marco@gmail.com', '
 
 // console.log(whiteMailList);
 
+result.innerHTML = 'Inserisci una mail valida per accedere'            
 
 document.getElementById('send').addEventListener('click', function (e) {
     e.preventDefault();
@@ -70,11 +71,7 @@ document.getElementById('send').addEventListener('click', function (e) {
             
             result.innerHTML = 'Sei Ammesso'            
             
-        } else {
-            result.innerHTML = 'Non sei Ammesso'
-            
         }
-        
     }
  
     
